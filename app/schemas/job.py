@@ -17,3 +17,11 @@ class JobOut(BaseModel):
     posted_date:date
     salary:float
     apply_link:str
+
+class JobUpdate(BaseModel):
+    company_id:int | None = None
+    title:str | None = None
+    description:str | None = None
+    posted_date:date | None = None
+    salary:float | None = None
+    apply_link:str | None = None
